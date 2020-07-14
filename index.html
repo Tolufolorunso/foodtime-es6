@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/beautify.css">
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <header class="header">
+        <div class="container">
+            <div class="time-content">
+                <h1><span id="today-date">9pm</span></h1>
+            </div>
+            <div class="time-boxes">
+                <div class="time-box" id="hour">
+                    00 <span>HRS</span>
+                </div>
+                <div class="time-box" id="min">
+                    00 <span>MIN</span>
+                </div>
+                <div class="time-box" id="sec">
+                    00 <span>SEC</span>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <!-- <div class="time-content">
+                <h1>The time is: <span id="time">9pm</span></h1>
+            </div> -->
+            <div class="main-content">
+                <form class="form-tag" id="food-detail">
+                    <div class="form-group">
+                        <input type="text" autocomplete="off" placeholder="Enter Time to eat your food. eg. 8" name="foodname" id="time-to-eat">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" autocomplete="off" placeholder="Enter food name. eg. Rice" name="foodname" id="food-name">
+                    </div>
+                    <div class="form-group">
+                        <select name="foodtype" id="food-type"> 
+                          <option value="Breakfast">BreakFast</option>
+                          <option value="Lunch">Lunch</option>
+                          <option value="Dinner">Dinner</option>
+                        </select>
+                    </div>
+                    <div class="form-group add-food">
+                        <button type="submit" class="btn">Add</button>
+                    </div>
+                    <div class="form-group clear-storage">
+                        <span class="btn" id="clear-storage">Clear Storage</span>
+                    </div>
+                </form>
+
+                <div class="image-container">
+
+                </div>
+            </div>
+
+
+        </div>
+        <div class="container">
+            <div class="message">
+                <table>
+                    <thead>
+                        <th>Food type</th>
+                        <th>Food name</th>
+                        <th>Time to eat</th>
+                    </thead>
+                    <tbody id="message"></tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <p>Copyright <span id="get-year">2020</span> | All Rights Reserved. Coded by <a class="coded-by" href="http://www.twitter.com/developer_tolu" target="_blank">@developer_tolu</a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        const getYear = document.querySelector("#get-year");
+        getYear.textContent = new Date().getUTCFullYear();
+    </script>
+    <script src="scripts/life.js" async defer></script>
+</body>
+
+</html>
